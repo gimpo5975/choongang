@@ -17,8 +17,8 @@ function App() {
               </div>
               <p className="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl">결혼기념일 축하!!</p>
               <div className="pt-2 pr-0 pb-0 pl-0">
-                <a href="#" className="inline text-sm font-medium mt-0 mr-1 mb-0 ml-1 underline">원중올림</a>
-                <p className="inline text-sm font-medium mt-0 mr-1 mb-0 ml-1">· 18rd, May 2024 ·</p>
+                <p className="text-sm font-medium inline">원중올림</p>
+                <p className="inline text-sm font-medium mt-0 mr-1 mb-0 ml-1">· 18rd, MAY 2021 ·</p>
               </div>
             </div>
           </div>
