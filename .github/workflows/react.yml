@@ -22,16 +22,9 @@ jobs:
           aws-region: ${{secrets.AWS_REGION}}
 
       - name: react-build
-        runs-on: ubuntu-latest
-        steps:
-          - name: Set up Node.js
-            uses: actions/setup-node@v2
-            with:
-              node-version: '20'
-          - name: Install dependencies
-            run: npm install
-          - name: Build
-            run: npm run build
+        run: |
+          npm install
+          npm run build
 
       - name: S3에 업로드
         run: aws s3 sync build/ s3://${{secrets.AWS_S3_BUCKET}}
